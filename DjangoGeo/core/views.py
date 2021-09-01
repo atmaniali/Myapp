@@ -17,7 +17,8 @@ def index (request):
     provinces = get_all_provinces()
 
     for province in provinces:
-    folium.Marker([35.6976541, -0.6337376], tooltip = "click here for more", popup = "oran", icon = folium.Icon(color= 'purple')).add_to(map) 
+        folium.Marker([35.6976541, -0.6337376], tooltip = "click here for more", popup = "oran", icon = folium.Icon(color= 'purple')).add_to(map) 
+
     map = map._repr_html_() 
     context["maps"] = map
     return render(request, template_name, context)
