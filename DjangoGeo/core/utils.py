@@ -14,10 +14,10 @@ def get_all_provinces():
     data = []
     longitude = []
     latitide = []
-    # for province in provinces :
-    #     # data.append(province['data'])
+    for province in provinces :
+        data.append(province['data'])
     #     # longitude.append(province[''])
-    #     print(province['latitude'])
+    #print(type(data))
     return provinces    
 
 get_all_provinces()
